@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset= "UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>API</title>
+     <link rel="stylesheet" href="style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="body">
+  <div class="group mt-2  d-flex  justify-content-center">
+    <form autocomplete="on"id="form">
+      <h1 class="text-center fw-bolder justify-content-center">Register Form</h1>
+      <div class="fw-bolder mt- mx-5 row fs-5">
+        <label for="name" class="fw-bold">Name</label>
+        <input type="text" class="form-control mt-2 " id="name" placeholder="Enter your name" name="name">
+        <div id="nameError"class="error "></div>
+      </div>
+      <div class="fw-bolder mt-2 mx-5 row fs-5">
+        <label for="mail" class="fw-bold">Email</label>
+        <input type="name" class="form-control " id="mail" placeholder="Enter your mail" name="mail">
+        <div id="emailError"class="error "></div>
+      </div>  
+      <div class="fw-bolder mx-5 row fs-5">
+        <label for="DOB"  class="fw-bold mt-3">DOB</label>
+        <input type="date" class="form-control " id="DOB" placeholder="Enter your date" name="DOB">
+        <div id="dbError"class="error "></div>
+      </div>
+      <div class="fw-bolder  mx-5  row fs-5">
+        <label for="Ph.No"  class="fw-bold mt-3">Ph.No</label>
+        <input type="tel" class="form-control " id="Ph.No" placeholder="Enter your number" name="Ph.No">
+        <div id="phError"class="error "></div>
+      </div>
+      <div class="mx-5 mt-3"id="gender">
+        <label for="gender" class="fw-bold fs-5">Gender</label><br>
+        <input id="genm" type="radio"name="gen" class="mx-2">
+        <label for="male">Male</label>
+        <input id="genf" type="radio" name="gen" class="mx-2">
+        <label for="female">female</label>
+        <div class="error fw-bold " id="genderError"></div>
+      </div>
+      <div class="fw-bolder mt-2 mx-5 row fs-5">
+        <label for="langg" id="" class="form-label">Languages</label>
+          <input type="text" list="lang" class="form-control"placeholder="Select your language"id="langg">
+          <datalist id="lang">
+               <option value="Tamil"></option>
+               <option value="english"></option>
+               <option value="telugu"></option>
+               <option value="spanish"></option>
+          </datalist>
+        <div id="langError"class="error "></div>
+      </div>
+       <div class="fw-bolder mt-2 mx-5 row fs-5">
+        <label for="pwd" class="fw-bold">Password</label>
+        <input type="password" class="form-control " id="pwd" placeholder="Enter your password" name="pwd">
+        <div id="pwdError"class="error "></div>
+      </div>
+      <div class="fw-bolder mt-2 mx-5 row fs-5">
+        <label for="confirmpwd" class="fw-bold">Confirm Password</label>
+        <input type="password" class="form-control  " id="confirmpwd" placeholder="Confirm password" name="confirmpwd">
+        <div id="cpwdError"class="error "></div>
+      </div>
+        <div class="mx-5 mt-4 ">
+          <label  class="fw-bold fs-5">Register</label><br>
+          <input type="checkbox" id="myCheck">
+          <label for="myCheck">Present</label>
+      
+        </div>
+      <div class="text-center d-flex align-item-center justify-content-center">
+      <button type="button" class="btn btn-dark mt-5 fs-5 fw-bold"id="send" onclick="validateForm()">Submit</button>
+  </div>
+  </form>
+  </div> 
+  <script src="main.js"></script>
+</body> 
+</html>
